@@ -1,0 +1,13 @@
+dependencies:
+  '@rush-temp/empty-package': 'file:projects/empty-package.tgz'
+lockfileVersion: 5.1
+packages:
+  'file:projects/empty-package.tgz':
+    dev: false
+    name: '@rush-temp/empty-package'
+    resolution:
+      integrity: sha512-CND771vKf6TvBUfLjbUZvANp9/HG7TVU+uO1BCtnQTs7AHQm69UBYjtmahg3/Nm/40biknZArq0WOeTIM4X4ow==
+      tarball: 'file:projects/empty-package.tgz'
+    version: 0.0.0
+specifiers:
+  '@rush-temp/empty-package': 'file:./projects/empty-package.tgz'
