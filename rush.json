@@ -26,7 +26,7 @@
    * Specify one of: "pnpmVersion", "npmVersion", or "yarnVersion".  See the Rush documentation
    * for details about these alternatives.
    */
-  "pnpmVersion": "2.15.1",
+  "pnpmVersion": "4.9.3",
 
   // "npmVersion": "4.5.0",
   // "yarnVersion": "1.9.4",
@@ -46,7 +46,7 @@
      * The default value is false to avoid legacy compatibility issues.
      * It is strongly recommended to set strictPeerDependencies=true.
      */
-    // "strictPeerDependencies": true,
+    "strictPeerDependencies": true,
 
 
     /**
@@ -61,7 +61,7 @@
      * After modifying this field, it's recommended to run "rush update --full" so that the package manager
      * will recalculate all version selections.
      */
-    // "resolutionStrategy": "fast"
+    "resolutionStrategy": "fewer-dependencies"
   },
 
   /**
@@ -72,7 +72,7 @@
    * Specify a SemVer range to ensure developers use a Node.js version that is appropriate
    * for your repo.
    */
-  "nodeSupportedVersionRange": ">=10.13.0 <11.0.0",
+  "nodeSupportedVersionRange": ">=8.0.0",
 
   /**
   * Odd-numbered major versions of Node.js are experimental.  Even-numbered releases
@@ -85,7 +85,7 @@
   * pre-LTS versions in preparation for supporting the first LTS version, you can use this setting
   * to disable Rush's warning.
   */
-  // "suppressNodeLtsWarning": false,
+  "suppressNodeLtsWarning": true,
 
   /**
    * If you would like the version specifiers for your dependencies to be consistent, then
@@ -98,7 +98,7 @@
    * version. In those cases, you will need to add an entry to the "allowedAlternativeVersions"
    * section of the common-versions.json.
    */
-   // "ensureConsistentVersions": true,
+   "ensureConsistentVersions": true,
 
   /**
    * Large monorepos can become intimidating for newcomers if project folder paths don't follow
